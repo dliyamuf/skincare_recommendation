@@ -32,7 +32,10 @@ The [dataset](https://www.kaggle.com/datasets/prastyasusanto/indonesia-skincare-
 - **Total Reviewers** : number of consumer that reviewes the product in website.
 - **Link** : link to the website.
 
-(gambar data info)
+<p align="center">
+  <img width="450" height="450" src="https://raw.githubusercontent.com/dliyamuf/skincare_recommendation/refs/heads/main/images/datainfo.png">
+</p>
+
 There are 7432 rows and 6 column contain object(5) and float(1) data types.
 
 ## **Data Condition**
@@ -40,31 +43,50 @@ There are 7432 rows and 6 column contain object(5) and float(1) data types.
 - There are two duplicated data.
 - There are some outliers with value below 2.5 on **Rating** feature.
   
-(gambar outlier)
+<p align="center">
+  <img width="600" height="500" src="https://raw.githubusercontent.com/dliyamuf/skincare_recommendation/refs/heads/main/images/outlier.png">
+</p>
 
 ## **Exploratory Data Analysis**
 ### **Univariate Analysis**
-(gambar univ1)
+
+<p align="center">
+  <img width="1000" height="600" src="https://raw.githubusercontent.com/dliyamuf/skincare_recommendation/refs/heads/main/images/univ1.png">
+</p>
+
 - There are 1204 brand name of skincare product. We make histogram plot of top 5 most counts brand name.
 - The most counts skincare brand is Innisfree with 134 counts.
 
-(gambar univ2)
+<p align="center">
+  <img width="1000" height="600" src="https://raw.githubusercontent.com/dliyamuf/skincare_recommendation/refs/heads/main/images/univ2.png">
+</p>
+
 There are 6 types of skincare product, **moisturizer cream** is the most counts skincare product type.
 
 ### **Multivariate Analysis**
-(gambar multi1)
+<p align="center">
+  <img width="1000" height="600" src="https://raw.githubusercontent.com/dliyamuf/skincare_recommendation/refs/heads/main/images/multi1.png">
+</p>
 
 The most reviewed skincare type product is **Facial Wash** with more than 140.000 reviewers on the website.
 
-(gambar multi2)
+<p align="center">
+  <img width="1000" height="600" src="https://raw.githubusercontent.com/dliyamuf/skincare_recommendation/refs/heads/main/images/multi2.png">
+</p>
 
 Top 10 the most reviewed skincare brand name is **Garnier, Wardah, Pond's, Hada Labo, Emina, Viva Cosmetics, Azarine Cosmetics, Cosrx, Cetaphil,** and **Skin Aqua**.
 
-(gambar multi3)
+
+<p align="center">
+  <img width="1000" height="600" src="https://raw.githubusercontent.com/dliyamuf/skincare_recommendation/refs/heads/main/images/multi3.png">
+</p>
 
 Skincare type with average rating above mean average rating of skincare type product are **Moisturizer Cream, Toner, Facial Wash,** and **Moisturizer Gel**.
 
-(gambar multi4)
+
+<p align="center">
+  <img width="1000" height="600" src="https://raw.githubusercontent.com/dliyamuf/skincare_recommendation/refs/heads/main/images/multi3.png">
+</p>
 
 Popular brand name with highest average rating is **Missha**.
 
@@ -91,7 +113,10 @@ Cons:
 - Doesn't consider absolute differences (two vectors with similar directions but different magnitudes can still be close).
 - Requires dense vector representation, which may need feature engineering.
 
-(gambar hasil cosine)
+
+<p align="center">
+  <img width="500" height="300" src="https://raw.githubusercontent.com/dliyamuf/skincare_recommendation/refs/heads/main/images/cos.png">
+</p>
 
 ## **Jaccard Distance**
 - Measures the similarity between two sets by comparing their intersection and union.
@@ -104,6 +129,11 @@ Pros:
 Cons:
 - Ignores feature frequency (e.g., if one product has SPF 30 and another SPF 50, Jaccard treats them the same).
 - Doesn't work well with high-dimensional or continuous data.
+
+
+<p align="center">
+  <img width="500" height="300" src="https://raw.githubusercontent.com/dliyamuf/skincare_recommendation/refs/heads/main/images/jac.png">
+</p>
 
 # **Evaluation**
 There are 4 performance metrics to evaluate each models of top-K recommendation.
@@ -134,7 +164,9 @@ $\[
 MRR@K = \frac{1}{|Q|} \sum_{q=1}^{|Q|} \frac{1}{\text{rank of first relevant item}}
 \]$
 
-(gambar comparison)
+<p align="center">
+  <img width="450" height="450" src="https://raw.githubusercontent.com/dliyamuf/skincare_recommendation/refs/heads/main/images/comparison.png">
+</p>
 
 Observations:
 - Both models has same value for **Precision@5** and **Recall@5**. It means that both models recommend 40% relevant products in the top 5 results and retrieve 67% of all relevant products.
