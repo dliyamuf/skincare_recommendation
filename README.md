@@ -1,6 +1,6 @@
 # **MACHINE LEARNING PROJECT REPORT - DLIYA AWLIYA MUFIDAH**
 # **Project Overview**
-With the rapid growth of skincare brands worldwide, many skincare consumers often struggle to find similar products based on their preferences. The use of Artificial Intelligence (AI) by cosmetic brands to help consumers discover suitable products has become a growing trend [(Lin et al., 2022)](https://doi.org/10.3390/electronics11010143). Conten-based filtering of recommender system is one of the most useful techniques to find similarity between products. This system leverages machine learning and natural language processing (NLP) to analyze skincare product descriptions, ratings, and user reviews to generate personalized recommendations [(Vinutha et al, 2024)](https://ieeexplore.ieee.org/document/10626458).
+With the rapid growth of skincare brands worldwide, many skincare consumers often struggle to find similar products based on their preferences. The use of Artificial Intelligence (AI) by cosmetic brands to help consumers discover suitable products has become a growing trend [(Lin et al., 2022)](https://doi.org/10.3390/electronics11010143). Content-based filtering of recommender system is one of the most useful techniques to find similarity between products. This system leverages machine learning and natural language processing (NLP) to analyze skincare product descriptions, ratings, and user reviews to generate personalized recommendations [(Vinutha et al, 2024)](https://ieeexplore.ieee.org/document/10626458).
 
 
 ***
